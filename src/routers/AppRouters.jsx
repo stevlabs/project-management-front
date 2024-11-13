@@ -1,12 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 import { HomePage, LoginPage, MyProjectsPage, MyTasksPage } from "../publicViews/pages"
 import { ProtectedPage } from "../admin/pages"
-import { UserContext } from "../context/UserContext"
-import { useContext } from "react"
+import { useUser } from "../hooks/useUser"
 
 export const AppRouters = () => {
     
-    const { isAuthenticated } = useContext(UserContext)
+    const { isAuthenticated } = useUser()
 
     return (
         <Routes>

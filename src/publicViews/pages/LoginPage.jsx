@@ -1,10 +1,10 @@
-import { useContext } from "react"
-import { UserContext } from "../../context/UserContext"
 import { useNavigate } from "react-router-dom"
+import { useUser } from "../../hooks/useUser"
+import "./loginPage.css"
 
 export const LoginPage = () => {
 
-  const { mensaje, user, setUser, isAuthenticated, login } = useContext(UserContext)
+  const { mensaje, user, setUser, isAuthenticated, login } = useUser()
   const navigate = useNavigate()
 
   const handleSubmit = (ev) => {
@@ -23,31 +23,33 @@ export const LoginPage = () => {
     navigate('/admin')
   }  
   return (
-    <div>
-      <code><pre>{JSON.stringify(user, null, " ")}</pre></code>
+    <div className="App-login-page">
+      {/*<code><pre>{JSON.stringify(user, null, " ")}</pre></code>*/}
       <h1>LoginPage</h1>
-      <h2>{mensaje}</h2>
-      <p>{isAuthenticated ? 'está autenticado' : 'no está autenticado'}</p>
+      {/*<h2>{mensaje}</h2>*/}
+      {/*<p>{isAuthenticated ? 'está autenticado' : 'no está autenticado'}</p>*/}
 
       <form
           id='login'
           onSubmit={handleSubmit}
       >
-          <input
-              type="text"
-              name='name'
-              id='name'
-              placeholder='Nombre'
-          />
-          <input
-              type="text"
-              name='password'
-              id='password'
-              placeholder='Password'
-          />
-          <button type='submit'>
-              Login
-          </button>
+        <label htmlFor="name">Nombre</label>
+        <input
+            type="text"
+            name='name'
+            id='name'
+            placeholder='Escriba su nombre'
+        />
+        <label htmlFor="password">Contraseña</label>
+        <input
+            type="text"
+            name='password'
+            id='password'
+            placeholder='Escriba su contraseña'
+        />
+        <button type='submit'>
+          Iniciar sesión
+        </button>
       </form>
     </div>
   )

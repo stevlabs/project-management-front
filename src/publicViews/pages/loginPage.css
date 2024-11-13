@@ -1,0 +1,59 @@
+.App-login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--app-bg);
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.App-login-page h1 {
+    font-size: 2rem;
+    color: var(--app-dark-bg);
+    margin: 20px;
+}
+
+.App-login-page form {
+    background-color: var(--app-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.App-login-page label {
+    display: block;
+    font-weight: bold;
+}
+
+.App-login-page input {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid var(--app-border);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.App-login-page input:focus {
+    border-color: var(--app-green);
+    outline: none;
+}
+
+.App-login-page button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--app-green);
+    border: none;
+    color: var(--app-white);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.App-login-page button:hover {
+    background-color: var(--app-link-hover);
+}

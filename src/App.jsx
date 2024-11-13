@@ -1,21 +1,20 @@
-import { NavBar } from '../ui/components/NavBar'
+import { NavBar } from '../ui/components'
 import { UserProvider } from './context/UserContext'
 import { AppRouters } from './routers/AppRouters'
+import './App.css'
 
 function App() {
   return (
     <>
       <UserProvider>
-        <header>
+        <header className='App-header'>
           HEADER DE EJEMPLO
         </header>
-        <nav>
-          <NavBar />
-        </nav>
+        <NavBar />
         <main>
           <AppRouters />
         </main>
-        <footer>
+        <footer className='App-footer'>
           FOOTER DE EJEMPLO
         </footer>
       </UserProvider>

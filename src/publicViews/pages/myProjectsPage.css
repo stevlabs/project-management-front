@@ -1,0 +1,53 @@
+/* MY PROJECTS PAGE */
+.App-my-projects-page {
+    background-color: var(--app-bg);
+    padding: 40px 20px;
+}
+
+.App-my-projects-page h1 {
+    font-size: 2.5rem;
+    color: var(--app-dark-bg);
+    margin-bottom: 40px;
+}
+
+/* PROJECT LIST */
+.App-project-list {
+    background-color: var(--app-bg);
+    padding: 0 20px;
+}
+
+.App-project-list h2 {
+    font-size: 2rem;
+    color: var(--app-dark-bg);
+    margin-bottom: 30px;
+}
+
+/* PROJECT CARDS */
+.App-project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.App-project-card {
+    background-color: var(--app-white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.App-project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.App-project-card p {
+    font-size: 1rem;
+    color: var(--app-dark-gray);
+    margin-bottom: 8px;
+}

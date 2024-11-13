@@ -1,0 +1,23 @@
+.App-home-page {
+    padding: 40px 20px;
+    background-color: var(--app-bg);
+    color: var(--app-dark-gray);
+    text-align: center;
+}
+
+.App-home-page h1 {
+    font-size: 2.5rem;
+    color: var(--app-dark-bg);
+    margin-bottom: 10px;
+}
+
+.App-home-page h2 {
+    font-size: 1.8rem;
+    color: var(--app-green);
+    margin-bottom: 20px;
+}
+
+.App-home-page p {
+    font-size: 1.1rem;
+    color: var(--app-dark-gray);
+}
