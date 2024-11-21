@@ -2,13 +2,14 @@ import { Button, Modal } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useApi } from "../../hooks/useApi";
 
-export const DeleteProjectModal = ({ show, handleClose, projectId, projectName }) => {
+export const DeleteProjectModal = ({ show, handleClose, projectId, projectName, onProjectDelete }) => {
     const url = `${import.meta.env.VITE_URL_BASE}/project/${projectId}`;
     const { makeRequest, isLoading } = useApi(url, 'DELETE');
     const handleConfirm = async () => {
         try {
             await makeRequest();
             alert(`Proyecto "${projectName}" eliminado con éxito.`);
+            onProjectDelete(projectId);
             handleClose();
         } catch (error) {
           console.error("Error al eliminar el proyecto:", error);

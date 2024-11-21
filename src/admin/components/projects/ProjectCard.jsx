@@ -3,7 +3,7 @@ import { formatDate } from "../../utils/dateUtils"
 import { DeleteProjectModal } from "../../pages/DeleteProjectModal";
 import { useState } from "react";
 
-export const ProjectCard = ({ project_id, name, description, start_date, end_date }) => {
+export const ProjectCard = ({ project_id, name, description, start_date, end_date, onProjectDelete }) => {
   
   const [show, setShow] = useState(false);
 
@@ -31,6 +31,7 @@ export const ProjectCard = ({ project_id, name, description, start_date, end_dat
             handleClose={handleClose}
             projectId={project_id}
             projectName={name}
+            onProjectDelete={onProjectDelete}
           />
         </div>
         

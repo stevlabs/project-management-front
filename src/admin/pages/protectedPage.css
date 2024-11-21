@@ -1,0 +1,70 @@
+/* ADMIN HOMEPAGE */
+.App-admin-homepage {
+    background-color: var(--app-bg);
+    padding: 40px 20px;
+  }
+  
+  .App-admin-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .App-admin-header h1 {
+    font-size: 2.5rem;
+    color: var(--app-dark-bg);
+    margin-bottom: 10px;
+  }
+  
+  .App-admin-header p {
+    font-size: 1.2rem;
+    color: var(--app-dark-gray);
+  }
+  
+  /* ACTION CARDS */
+  .App-admin-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .App-action-card {
+    background-color: var(--app-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .App-action-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--app-dark-bg);
+  }
+  
+  .App-action-card p {
+    font-size: 1rem;
+    color: var(--app-dark-gray);
+    margin-bottom: 15px;
+  }
+  
+  /* ACTION BUTTON */
+  .App-action-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--app-blue);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .App-action-btn:hover {
+    background-color: var(--app-blue-hover);
+  }
+  

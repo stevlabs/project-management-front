@@ -1,8 +1,15 @@
 import { NavLink } from "react-router-dom"
 import { useUser } from "../../src/hooks/useUser";
 import './navBar.css'
+import { useContext } from "react";
+import { UserContext } from "../../src/context/UserContext";
 
 export const NavBarAdmin = () => {
+    const { logout } = useContext(UserContext)
+
+    const handlerClick = () => {
+      logout()
+    }
     return (
     <ul className="App-nav-list">
         <li className="App-nav-item">
@@ -10,7 +17,7 @@ export const NavBarAdmin = () => {
                 to="admin"
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                ADMIN
+                PANEL ADMIN
             </NavLink>
         </li>
         <li className="App-nav-item">
@@ -19,6 +26,15 @@ export const NavBarAdmin = () => {
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
                 MIS PROJECTOS
+            </NavLink>
+        </li>
+        <li className="App-nav-item">
+            <NavLink
+                to="/"
+                onClick={handlerClick}
+                className={({ isActive }) => isActive ? 'menuActivo' : ''}
+            >
+                LOGOUT
             </NavLink>
         </li>
     </ul>
