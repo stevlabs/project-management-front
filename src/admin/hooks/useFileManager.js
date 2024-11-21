@@ -2,10 +2,19 @@ import React, { useEffect, useReducer } from 'react'
 import { filreReducer } from '../reducers/filreReducer';
 import { apiRequest } from '../../api/apiRequest';
 
+/**
+ * Hook para gestionar recursos de un proyecto.
+ * 
+ * @param {number} projectId - El ID del proyecto.
+ * @returns {Object} - Estado y funciones para gestionar los archivos.
+ */
 export const useFileManager = (projectId) => {
     const initialState = { files: [], isLoading: false, error: null };
     const [state, dispatch] = useReducer(filreReducer, initialState);
     
+    /**
+     * Obtiene los archivos del proyecto.
+     */
     const getFiles = async () => {
         const url = `${import.meta.env.VITE_URL_BASE}/project/${projectId}/resources`;
         try {
@@ -17,6 +26,12 @@ export const useFileManager = (projectId) => {
         }
     };
 
+    /**
+     * Añade un archivo al proyecto.
+     * 
+     * @param {File} file - El archivo a subir.
+     * @param {number} userId - El ID del usuario que sube el archivo.
+     */
     const addFile = async (file, userId) => {
         const uploadUrl = `${import.meta.env.VITE_URL_BASE}/project/${projectId}/upload`;
         const formData = new FormData();
@@ -31,6 +46,11 @@ export const useFileManager = (projectId) => {
         }
     };
 
+    /**
+     * Elimina un archivo del proyecto.
+     * 
+     * @param {number} fileId - El ID del archivo a eliminar.
+     */
     const deleteFile = async (fileId) => {
         const deleteUrl = `${import.meta.env.VITE_URL_BASE}/resource/${fileId}`;
         try {
@@ -42,6 +62,7 @@ export const useFileManager = (projectId) => {
         }
     };
 
+    // Cargar los archivos al inicializar el hook
     useEffect(() => {
         getFiles();
     }, []);

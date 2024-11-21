@@ -4,14 +4,19 @@ import './navBar.css'
 import { useContext } from "react";
 import { UserContext } from "../../src/context/UserContext";
 
+// Componente de barra de navegación para admin.
 export const NavBarAdmin = () => {
+    // Accedemos a logout desde el contexto del usuario.
     const { logout } = useContext(UserContext)
 
+    // Función para manejar el clic en "Logout".
     const handlerClick = () => {
-      logout()
+      logout(); // Cerramos la sesión.
     }
+
     return (
     <ul className="App-nav-list">
+        {/* Enlace al panel de administración */}
         <li className="App-nav-item">
             <NavLink
                 to="admin"
@@ -20,6 +25,7 @@ export const NavBarAdmin = () => {
                 PANEL ADMIN
             </NavLink>
         </li>
+        {/* Enlace a la sección de proyectos del admin */}
         <li className="App-nav-item">
             <NavLink
                 to="admin/projects"
@@ -28,6 +34,7 @@ export const NavBarAdmin = () => {
                 MIS PROJECTOS
             </NavLink>
         </li>
+        {/* Enlace para cerrar sesión */}
         <li className="App-nav-item">
             <NavLink
                 to="/"

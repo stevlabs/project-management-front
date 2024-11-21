@@ -1,8 +1,35 @@
-# React + Vite
+# Web de Gestión de Proyectos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web para la gestión de proyectos, documentos, tareas, ...etc.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Gestión de proyectos:** Crear, eliminar y gestionar proyectos.
+- **Gestión de tareas:** Crear, asignar y priorizar tareas. (En progreso)
+- **Gestión de documentos:** Subir, eliminar y descargar archivos.
+- **Roles y permisos:** Funcionalidades ajustadas según el rol del usuario (En progreso)
+
+## Instalación
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/tu-usuario/react-gestion-proyectos.git
+   cd react-gestion-proyectos
+   ```
+
+2. **Instala las dependencias con Yarn:**
+   ```bash
+   yarn install
+   ```
+
+3. **Configura las variables de entorno:**
+   Crea un archivo .env y agrega:
+   ```bash
+   VITE_URL_BASE=http://localhost:4000/api/v1 (EJEMPLO)
+   VITE_URL_BASE=URL_DEL_BACK
+   ```
+
+4. **Inicia la aplicación:**
+   ```bash
+    yarn dev
+    ```

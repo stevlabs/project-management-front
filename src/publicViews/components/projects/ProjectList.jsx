@@ -1,6 +1,8 @@
 import { ProjectCard } from "./ProjectCard"
 
+// Componente que lista los proyectos.
 export const ProjectList = () => {
+  // Datos de ejemplo para los proyectos
   const projects = [
     {
         id: 1,
@@ -21,6 +23,7 @@ export const ProjectList = () => {
     <section className="App-project-list">
         <h2>Lista de mis projectos</h2>
         <div className="App-project-cards-container">
+          {/* Iteramos sobre los proyectos para renderizar una tarjeta por cada uno */}
             {projects.map((project) => (
                 <ProjectCard key={project.id} {...project} />
             ))}

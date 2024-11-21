@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom"
-
 import './navBar.css'
 
+// Componente de barra de navegación para users.
 export const NavBarUser = () => {
   return (
     <ul className="App-nav-list">
+        {/* Enlace a la página de inicio */}
         <li className="App-nav-item">
             <NavLink
                 to="/"
@@ -13,6 +14,7 @@ export const NavBarUser = () => {
                 HOME PAGE
             </NavLink>
         </li>
+        {/* Enlace a la sección de proyectos */}
         <li className="App-nav-item">
             <NavLink
                 to="projects"
@@ -21,6 +23,7 @@ export const NavBarUser = () => {
                 PROJECTOS
             </NavLink>
         </li>
+        {/* Enlace a la sección de tareas */}
         <li className="App-nav-item">
             <NavLink
                 to="tasks"
@@ -29,6 +32,7 @@ export const NavBarUser = () => {
                 TAREAS
             </NavLink>
         </li>
+        {/* Enlace para iniciar sesión */}
         <li className="App-nav-item">
             <NavLink
                 to="login"

@@ -1,3 +1,10 @@
+/**
+ * Reducer para gestionar el estado relacionado con archivos.
+ * 
+ * @param {Object} state - El estado actual.
+ * @param {Object} action - La acción que modifica el estado.
+ * @returns {Object} - El nuevo estado actualizado.
+ */
 export const filreReducer = (state, action) => {
     switch (action.type) {
         case 'FETCH_START':

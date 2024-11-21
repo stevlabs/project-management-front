@@ -42,13 +42,6 @@ export const useForm = (url, method) => {
             [name]: value // Actualiza el campo que se haya modificado
         })
     }
-    /*
-    useEffect(() => {
-        if (data) {
-            setFormulario(data);
-        }
-    }, [data]);
-    */
 
     // Devuelve el estado del formulario y las funciones
     return {
