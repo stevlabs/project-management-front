@@ -13,8 +13,8 @@ Una aplicación web para la gestión de proyectos, documentos, tareas, ...etc.
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/react-gestion-proyectos.git
-   cd react-gestion-proyectos
+   git clone https://github.com/stevlabs/project-management-front.git
+   cd project-management-front
    ```
 
 2. **Instala las dependencias con Yarn:**
