@@ -1,0 +1,100 @@
+/* FILE TABLE */
+.App-file-table-container {
+  margin-bottom: 40px;
+  background-color: var(--app-white);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-file-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.App-file-table th,
+.App-file-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--app-border);
+}
+
+.App-file-table th {
+  background-color: var(--app-light-gray);
+  font-weight: bold;
+}
+
+.App-file-table tr:hover {
+  background-color: var(--app-bg);
+}
+
+/* UPLOAD BUTTON */
+.App-file-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.App-file-upload-label {
+  background-color: var(--app-blue);
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.App-file-upload-label:hover {
+  background-color: var(--app-blue-hover);
+}
+
+.App-file-add-btn {
+  background-color: var(--app-green);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.App-file-add-btn:hover {
+  background-color: var(--app-link-hover);
+}
+
+/* ACTIONS BUTTONS */
+.App-file-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.App-file-btn {
+  display: inline-block;
+  background-color: var(--app-green);
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  border: none; 
+}
+
+.App-file-btn:hover {
+  background-color: var(--app-link-hover);
+}
+
+.App-file-delete-btn {
+  background-color: var(--app-red);
+}
+
+.App-file-delete-btn:hover {
+  background-color: var(--app-red-hover);
+}

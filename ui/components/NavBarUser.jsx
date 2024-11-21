@@ -10,7 +10,7 @@ export const NavBarUser = () => {
                 to="/"
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                HomePage
+                HOME PAGE
             </NavLink>
         </li>
         <li className="App-nav-item">
@@ -18,7 +18,7 @@ export const NavBarUser = () => {
                 to="projects"
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                Projectos
+                PROJECTOS
             </NavLink>
         </li>
         <li className="App-nav-item">
@@ -26,7 +26,7 @@ export const NavBarUser = () => {
                 to="tasks"
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                Tareas
+                TAREAS
             </NavLink>
         </li>
         <li className="App-nav-item">
@@ -34,7 +34,7 @@ export const NavBarUser = () => {
                 to="login"
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                Login
+                LOGIN
             </NavLink>
         </li>
     </ul>

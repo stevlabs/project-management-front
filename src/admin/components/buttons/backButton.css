@@ -1,0 +1,28 @@
+/* BACK BUTTON CONTAINER */
+.App-btn-back-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.App-btn-back-custom-container {
+    position: relative;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* BACK BUTTON */
+.App-btn-back {
+    background-color: var(--app-green);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.App-btn-back:hover {
+    background-color: var(--app-link-hover); 
+}

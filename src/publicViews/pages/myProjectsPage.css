@@ -10,6 +10,89 @@
     margin-bottom: 40px;
 }
 
+/* CREATE PROJECT BUTTON */
+.App-project-create-button a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--app-green);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+    cursor: pointer
+}
+
+.App-project-create-button a:hover {
+    background-color: var(--app-link-hover);
+}
+
+
+/* CREATE PROJECT PAGE*/
+.App-create-project-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--app-bg);
+    gap: 20px;
+}
+
+.App-create-project-page h2 {
+    font-size: 2rem;
+    color: var(--app-dark-bg);
+    margin: 20px;
+}
+
+.App-create-project-page form {
+    background-color: var(--app-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+.App-create-project-page label {
+    display: block;
+    font-weight: bold;
+}
+
+.App-create-project-page input,
+.App-create-project-page textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid var(--app-border);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.App-create-project-page input:focus,
+.App-create-project-page textarea:focus {
+    border-color: var(--app-green);
+    outline: none;
+}
+
+.App-create-project-page button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--app-green);
+    border: none;
+    color: var(--app-white);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.App-create-project-page button:hover {
+    background-color: var(--app-link-hover);
+}
+
 /* PROJECT LIST */
 .App-project-list {
     background-color: var(--app-bg);
@@ -50,4 +133,105 @@
     font-size: 1rem;
     color: var(--app-dark-gray);
     margin-bottom: 8px;
+}
+
+/* PROJECT CARDS LINK BUTTON (EDITAR Y ELIMINAR) */
+.App-project-card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; 
+}
+
+.App-project-card-detail a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--app-blue);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.App-project-card-detail a:hover{
+    background-color: var(--app-blue-hover);
+}
+
+.App-project-card-edit a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--app-yellow);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.App-project-card-edit a:hover{
+    background-color: var(--app-yellow-hover);
+}
+
+.App-project-card-delete button {
+    display: inline-block;
+    background-color: var(--app-red);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.App-project-card-delete button:hover {
+    background-color: var(--app-red-hover);
+}
+
+/* PORJECT DETAIL PAGE */
+.App-detail-project-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--app-bg);
+    gap: 20px;
+}
+
+.App-detail-project-page h2 {
+    font-size: 2rem;
+    color: var(--app-dark-bg);
+    margin: 20px;
+}
+
+.App-detail-project-page-container {
+    background-color: var(--app-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.App-detail-project-page-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--app-dark-bg);
+    text-align: center;
+}
+
+.App-detail-project-page-container p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.App-detail-project-page-container p strong {
+    font-weight: bold;
 }

@@ -10,7 +10,15 @@ export const NavBarAdmin = () => {
                 to="admin"
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                Admin
+                ADMIN
+            </NavLink>
+        </li>
+        <li className="App-nav-item">
+            <NavLink
+                to="admin/projects"
+                className={({ isActive }) => isActive ? 'menuActivo' : ''}
+            >
+                MIS PROJECTOS
             </NavLink>
         </li>
     </ul>

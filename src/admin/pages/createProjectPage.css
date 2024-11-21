@@ -1,0 +1,60 @@
+.App-create-project-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--app-bg);
+    gap: 20px;
+}
+
+.App-create-project-page h2 {
+    font-size: 2rem;
+    color: var(--app-dark-bg);
+    margin: 20px;
+}
+
+.App-create-project-page form {
+    background-color: var(--app-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+.App-create-project-page label {
+    display: block;
+    font-weight: bold;
+}
+
+.App-create-project-page input,
+.App-create-project-page textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid var(--app-border);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.App-create-project-page input:focus,
+.App-create-project-page textarea:focus {
+    border-color: var(--app-green);
+    outline: none;
+}
+
+.App-create-project-page button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--app-green);
+    border: none;
+    color: var(--app-white);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.App-create-project-page button:hover {
+    background-color: var(--app-link-hover);
+}
