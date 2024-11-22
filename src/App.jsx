@@ -11,7 +11,7 @@ function App() {
       <UserProvider>
         {/* Header de la aplicación */}
         <header className='App-header'>
-          HEADER DE EJEMPLO
+          <h1>Gestión de Proyectos</h1>
         </header>
         {/* Barra de navegación principal */}
         <NavBar />
@@ -21,7 +21,7 @@ function App() {
         </main>
         {/* Footer de la aplicación */}
         <footer className='App-footer'>
-          FOOTER DE EJEMPLO
+          <p>© {new Date().getFullYear()} Gestión de Proyectos.</p>
         </footer>
       </UserProvider>
     </>
