@@ -11,25 +11,7 @@ export const NavBarUser = () => {
                 to="/"
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                HOME PAGE
-            </NavLink>
-        </li>
-        {/* Enlace a la sección de proyectos */}
-        <li className="App-nav-item">
-            <NavLink
-                to="projects"
-                className={({ isActive }) => isActive ? 'menuActivo' : ''}
-            >
-                PROJECTOS
-            </NavLink>
-        </li>
-        {/* Enlace a la sección de tareas */}
-        <li className="App-nav-item">
-            <NavLink
-                to="tasks"
-                className={({ isActive }) => isActive ? 'menuActivo' : ''}
-            >
-                TAREAS
+                PAGINA DE INCIO
             </NavLink>
         </li>
         {/* Enlace para iniciar sesión */}
@@ -38,7 +20,16 @@ export const NavBarUser = () => {
                 to="login"
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                LOGIN
+                INICIAR SESION
+            </NavLink>
+        </li>
+            {/* Enlace para iniciar sesión */}
+                <li className="App-nav-item">
+            <NavLink
+                to="register"
+                className={({ isActive }) => isActive ? 'menuActivo' : ''}
+            >
+                REGISTRO
             </NavLink>
         </li>
     </ul>

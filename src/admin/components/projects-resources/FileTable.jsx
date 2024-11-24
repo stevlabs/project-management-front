@@ -74,7 +74,7 @@ export const FileTable = ({ projectId = 1 }) => {
                         rel="noopener noreferrer"
                         className="App-file-btn"
                     >
-                        Descargar
+                        VER
                     </a>
                     <button
                         onClick={() => handleFileDelete(file.resource_id)}

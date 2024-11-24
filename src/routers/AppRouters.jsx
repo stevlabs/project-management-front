@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import { HomePage, LoginPage, MyProjectsPage, MyTasksPage } from "../publicViews/pages"
+import { HomePage, LoginPage, RegisterPage, MyProjectsPage, MyTasksPage } from "../publicViews/pages"
 import { ProtectedPage, ProjectsPage } from "../admin/pages"
 import { useUser } from "../hooks/useUser"
 import { CreateProjectPage } from "../admin/pages/CreateProjectPage"
@@ -20,6 +20,7 @@ export const AppRouters = () => {
             {/* <Route path='projects/:id' element={<ProjectPage />} />*/}
             <Route path='tasks' element={<MyTasksPage />} />
             <Route path='login' element={<LoginPage />} />
+            <Route path='register' element={<RegisterPage />} />
             <Route path='/*' element={<Navigate to={'/'} />} />
 
             {/* RUTAS PROTEGIDAS */}

@@ -41,7 +41,7 @@ export const NavBarAdmin = () => {
                 onClick={handlerClick}
                 className={({ isActive }) => isActive ? 'menuActivo' : ''}
             >
-                LOGOUT
+                CERRAR SESION
             </NavLink>
         </li>
     </ul>

@@ -30,7 +30,7 @@ export const LoginPage = () => {
   }  
   return (
     <div className="App-login-page">
-      <h1>LoginPage</h1>
+      <h1>INICIO DE SESION</h1>
       <form
           id='login'
           onSubmit={handleSubmit}
@@ -44,7 +44,7 @@ export const LoginPage = () => {
         />
         <label htmlFor="password">Contraseña</label>
         <input
-            type="text"
+            type="password"
             name='password'
             id='password'
             placeholder='Escriba su contraseña'
